@@ -1,0 +1,17 @@
+{
+	"name": "dev-mvc-adf",
+	"properties": {
+		"globalParameters": {
+			"lk_temp_val": {
+				"type": "string",
+				"value": "1234"
+			}
+		}
+	},
+	"location": "australiaeast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "687c011a-7ab4-4afa-83d2-fb591dbbf972",
+		"tenantId": "c12aba17-76aa-43ae-a98e-54302f617a40"
+	}
+}
