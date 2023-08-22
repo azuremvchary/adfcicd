@@ -1,0 +1,9 @@
+{
+	"name": "devmvcadf",
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "dbd3052d-12b1-4ede-8209-189573abaa3f",
+		"tenantId": "c12aba17-76aa-43ae-a98e-54302f617a40"
+	}
+}
