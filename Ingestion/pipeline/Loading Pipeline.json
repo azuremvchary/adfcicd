@@ -1,9 +1,10 @@
 {
-	"name": "pipeline1",
+	"name": "Loading Pipeline",
 	"properties": {
 		"activities": [
 			{
 				"name": "Moving data from ADLS to ADLS",
+				"description": "Hello",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
