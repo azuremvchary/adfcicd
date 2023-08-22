@@ -21,7 +21,7 @@ jobs:
         uses: Azure/data-factory-export-action@v1.2.0
         with:
           path: Ingestion
-          id: /subscriptions/2bcf5e1a-2a28-4ce2-8082-e04bec437ea0/resourceGroups/mvc-cicd/providers/Microsoft.DataFactory/factories/dev-mvc-adf
+          #id: /subscriptions/2bcf5e1a-2a28-4ce2-8082-e04bec437ea0/resourceGroups/mvc-cicd/providers/Microsoft.DataFactory/factories/dev-mvc-adf
 
       - name: Upload ARM templates artifact
         uses: actions/upload-artifact@v3.1.1
@@ -56,8 +56,8 @@ jobs:
       - name: Deploy to TEST
         uses: Azure/data-factory-deploy-action@v1.2.0
         with:
-          resourceGroupName: mvc-cicd #${{ secrets.TEST_INGESTION_ADF_RESOURCE_GROUP_NAME}}
-          dataFactoryName: tst-mvc-adf #${{ secrets.TEST_INGESTION_DATA_FACTORY_NAME}}
+          resourceGroupName: newcicd #${{ secrets.TEST_INGESTION_ADF_RESOURCE_GROUP_NAME}}
+          dataFactoryName: testmvcadf #${{ secrets.TEST_INGESTION_DATA_FACTORY_NAME}}
           armTemplateFile: ./armtemplates/ARMTemplateForFactory.json
           armTemplateParametersFile: ./TEST-ARMTemplateParametersForFactory.json
           failOnStdErr: false
